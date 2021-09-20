@@ -5,7 +5,7 @@ export class Users {
     @PrimaryGeneratedColumn()
     id: number;
 
-    @Column("varchar", { length: 20 })
+    @Column("varchar", { length: 255 })
     email: string;
     
     @Column("varchar", { length: 20 })
@@ -17,6 +17,6 @@ export class Users {
     @Column("varchar", { length: 20 })
     password: string;
 
-    @Column("varchar", { length: 10 })
+    @Column("varchar", { length: 255 })
     role: string;
 }
